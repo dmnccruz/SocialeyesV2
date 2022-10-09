@@ -6,6 +6,7 @@
   gap: 1rem;
   overflow-x: clip;
   background: var(--cardColor);
+  width: 100%;
 }
 
 .ProfileImages {
@@ -18,10 +19,13 @@
 
 .ProfileImages > img:nth-of-type(1) {
   width: 100%;
+  max-height: 20rem;
+  object-fit: cover;
 }
 
 .ProfileImages > img:nth-of-type(2) {
   width: 6rem;
+  height: 6rem;
   border-radius: 50%;
   position: absolute;
   bottom: -3rem;
@@ -40,6 +44,7 @@
   font-weight: bold;
 }
 
+/* Follow Status */
 .followStatus {
   display: flex;
   flex-direction: column;
@@ -68,7 +73,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .follow > span:nth-of-type(1) {
   font-weight: bold;
 }
@@ -81,4 +85,17 @@
 .vl {
   height: 150%;
   border-left: 2px solid var(--hrColor);
+}
+
+.ProfileCard > span {
+  font-weight: bold;
+  color: orange;
+  align-self: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.ProfileCard > span a {
+  text-decoration: none !important;
+  color: inherit;
 }

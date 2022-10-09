@@ -1,6 +1,9 @@
 .Home {
   position: relative;
   display: grid;
-  grid-template-columns: 18rem auto 20rem;
+  grid-template-columns: minmax(14rem, 20rem) minmax(20rem, 40rem) minmax(
+      14rem,
+      20rem
+    );
   gap: 1rem;
 }

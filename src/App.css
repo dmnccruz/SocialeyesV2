@@ -30,6 +30,9 @@ body {
   color: var(--black);
   background: #f3f3f3;
   padding: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .blur {
@@ -57,6 +60,11 @@ body {
   color: var(--orange);
   background: transparent;
   border: 2px solid var(--orange);
+}
+
+.button:disabled {
+  background: silver;
+  pointer-events: none;
 }
 
 ::-webkit-scrollbar {
